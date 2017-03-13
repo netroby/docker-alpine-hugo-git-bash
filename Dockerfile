@@ -10,5 +10,5 @@ RUN apk update && apk add py-pygments && apk add git && apk add bash && rm -rf /
 
 # Download and Install hugo
 ADD https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz /usr/local/
-RUN tar xzf /usr/local/${HUGO_BINARY}.tgz -C /usr/bin/ \
-	&& rm /usr/local/${HUGO_BINARY}.tgz
+RUN tar xzf /usr/local/${HUGO_BINARY}.tar.gz -C /usr/bin/ \
+	&& rm /usr/local/${HUGO_BINARY}.tar.gz
